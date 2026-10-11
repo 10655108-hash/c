@@ -32,7 +32,7 @@ void task3(double x, double y)
     else
     {
         z = (x + y) / (y + 1) - (x * y - 12) / (34 + x);
-        printf("Z(%g, %g) = %g", x, y, z);
+        printf("Z(%g, %g) = %.4f", x, y, z);
     }
 
     printf("\n\n");
@@ -52,7 +52,7 @@ void task10(double x, double y)
     else
     {
         z = (x + pow(1.0 / pow(x, 2), x)) - 12 * pow(x, 2) * y;
-        printf("Z(%g, %g) = %g", x, y, z);
+        printf("Z(%g, %g) = %.4f", x, y, z);
     }
 
     printf("\n\n");
@@ -73,7 +73,7 @@ void task29(double x, double x1, double x2, double x3)
     else
     {
         z = (x1 * x2 + x1 * x3 + x2 * x3) / x;
-        printf("Z(%g, %g, %g, %g) = %g", x, x1, x2, x3, z);
+        printf("Z(%g, %g, %g, %g) = %.4f", x, x1, x2, x3, z);
     }
 
     printf("\n\n");
@@ -94,7 +94,7 @@ void task6(double x)
     else
     {
         z = sin(pow(x + 1, 0.5) - sin(pow(x - 1, 0.5)));
-        printf("Z(%g) = %g", x, z);
+        printf("Z(%g) = %.4f", x, z);
     }
 
     printf("\n\n");
@@ -115,7 +115,7 @@ void task7(double x, double y)
     else
     {
         z = pow(1 - tan(x), (cos(x) / sin(x))) + cos(x - y);
-        printf("Z(%g, %g) = %g", x, y, z);
+        printf("Z(%g, %g) = %.4f", x, y, z);
     }
 
     printf("\n\n");
