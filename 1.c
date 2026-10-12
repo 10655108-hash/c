@@ -21,7 +21,7 @@ void task51(double x, double x2)
     {
         printf("No solutions at X = %g", x);
     }
-    else if (x == -1)
+    else if (x2 == 1)
     {
         printf("No solutions at X2 = %g", x2);
     }
@@ -68,7 +68,7 @@ void task17(double x, double y)
     }
     else
     {
-        z = log(fabs((y - pow(fabs(x), 0.5)) / (x - y/(x + pow(x, 2) / 4))));
+        z = log(fabs((y - pow(fabs(x), 0.5)) * (x - y/(x + pow(x, 2) / 4))));
         printf("Z(%g, %g,) = %.4f", x, y, z);
     }
 
@@ -83,7 +83,7 @@ void task54(double x)
     double z = 0;
 
 
-    if (fabs(x) <= 3)
+    if (fabs(x) <= 3 || (log(pow(x, 2) - 9.0) / log(5.0) == 0))
     {
         printf("No solutions at X = %g", x);
     }
@@ -110,7 +110,7 @@ void task55(double x)
     }
     else
     {
-        z = pow(2*x - 5, 0.5) / (pow(2, x) + 4*x - 5);
+        z = pow(2*x - 5, 0.5) / (pow(x, 2) + 4*x - 5);
         printf("Z(%g) = %.4f", x, z);
     }
 
